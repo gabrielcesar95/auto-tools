@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from './routes';
-import AppStyles from './AppStyles.styles.tw';
+import AppStyles from './components/AppStyles';
+import "./index.css";
 
 function App() {
   return (

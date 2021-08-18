@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import tw from "twin.macro";
-// talvez nem precise:
-import "./index.css";
 
-
-export const AppStyles = styled.a`
+export const AppStyles = styled.div`
     ${tw`w-full h-screen flex flex-col items-center justify-center bg-black`}
     
     & {
