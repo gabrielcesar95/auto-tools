@@ -7,13 +7,14 @@ const AppStyles = styled.div.attrs({
   })`
     & {
       h1 {
-          ${tw`font-sans text-6xl font-mono text-6xl text-red-500`}
+          ${tw`text-6xl text-6xl text-red-500`}
+          text-shadow: 10px 10px 2px rgba(150, 150, 150, 1);
       }
       p {
         ${tw`text-gray-700 text-lg`}
       }
       h2 {
-        ${tw`text-2xl font-mono mt-5 text-red-500`}
+        ${tw`text-2xl mt-5 text-red-500`}
       }
       ul {
         ${tw`inline-flex`}
