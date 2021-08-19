@@ -1,6 +1,4 @@
 {
-    "conventionalCommits.scopes": [
-        "Structure",
-        "Home"
-    ]
+    "conventionalCommits.scopes": ["Structure", "Home"],
+    "editor.formatOnSave": true
 }
