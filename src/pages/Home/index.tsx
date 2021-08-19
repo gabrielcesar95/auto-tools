@@ -1,26 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import AppHeader from "../../components/Header";
+import AppStyles from "../../components/AppStyles";
+import Grid from "./components/Grid";
 
 const Home: React.FC = () => {
-    
-    return (
-        <>
-            <h1>Página Inicial</h1>
+  return (
+    <AppStyles>
+      <AppHeader />
 
-            <main>
-                <section>
-                    <ul>
-                        <li>
-                            <Link to="/tools">
-                                Ferramentas
-                            </Link>
-                        </li>
-                    </ul>
-                </section>
-            </main>
-        </>
-    );
-    
-}
+      <main>
+        <Grid />
+      </main>
+    </AppStyles>
+  );
+};
 
 export default Home;
