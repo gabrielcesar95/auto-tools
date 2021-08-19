@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from './routes';
-import "./index.css";
+import './index.css';
 
 function App() {
-  return (
-    <Router>
-      <Routes />
-    </Router>
-  );
+    return (
+        <Router>
+            <Routes />
+        </Router>
+    );
 }
 
 // TODO: implementar debug
