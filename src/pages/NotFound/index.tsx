@@ -1,18 +1,23 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import AppStyles from '../../components/styles';
+import NotFoundStyles, { ContentWrapper, StyledLink } from './styles';
 
 const NotFound: React.FC = () => {
-    useEffect(() => {
-        document.title = 'Página não encontrada';
-    }, []);
-
     return (
         <>
-            <h1>Página não encontrada</h1>
-
-            <main>
-                <Link to="/">Home</Link>
-            </main>
+            <Helmet>
+                <title>Página não encontrada</title>
+            </Helmet>
+            <AppStyles>
+                <NotFoundStyles>
+                    <ContentWrapper>
+                        <h1>Erro 404</h1>
+                        <p>Ué, não tem nada aqui não...</p>
+                        <StyledLink to="/">Página Inicial</StyledLink>
+                    </ContentWrapper>
+                </NotFoundStyles>
+            </AppStyles>
         </>
     );
 };
