@@ -11,6 +11,4 @@ function App() {
     );
 }
 
-// TODO: implementar debug
-
 export default App;
