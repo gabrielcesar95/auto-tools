@@ -1,9 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React, { ReactElement } from 'react';
+import { BrowserRouter, BrowserRouter as Router } from 'react-router-dom';
 import Routes from './routes';
 import './index.css';
 
-function App() {
+function App(): ReactElement<BrowserRouter> {
     return (
         <Router>
             <Routes />
