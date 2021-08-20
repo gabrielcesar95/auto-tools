@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderStyles from './HeaderStyles';
+import HeaderStyles from './styles';
 import HomeLink from './HomeLink';
 import PropTypes, { InferProps } from 'prop-types';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GridStyles from './GridStyles';
+import GridStyles from './styles';
 
 const Grid: React.FC = () => {
     return (

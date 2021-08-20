@@ -1,6 +1,6 @@
 import React from 'react';
 import AppHeader from '../../components/Header';
-import AppStyles from '../../components/AppStyles';
+import AppStyles from '../../components/styles';
 import Grid from './components/Grid';
 
 const Home: React.FC = () => {
