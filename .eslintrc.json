@@ -22,7 +22,8 @@
             {
                 "singleQuote": true,
                 "semi": true,
-                "endOfLine": "auto"
+                "endOfLine": "auto",
+                "trailingComma": "none"
             }
         ]
     },

@@ -1,17 +1,25 @@
 import React from 'react';
 import HeaderStyles from './HeaderStyles';
 import HomeLink from './HomeLink';
+import PropTypes, { InferProps } from 'prop-types';
 
-const AppHeader: React.FC = () => {
+const propTypes = {
+    title: PropTypes.string.isRequired
+};
+
+type AppHeaderTypes = InferProps<typeof propTypes>;
+
+const AppHeader: React.FC<AppHeaderTypes> = ({ title }: AppHeaderTypes) => {
     return (
         <HeaderStyles>
             <div>
                 <HomeLink />
-                {/* TODO: Obter nome da página através de prop ou pela rota */}
-                <h1>Ferramentas</h1>
+                <h1>{title}</h1>
             </div>
         </HeaderStyles>
     );
 };
+
+AppHeader.propTypes = propTypes;
 
 export default AppHeader;

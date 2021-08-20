@@ -6,7 +6,7 @@ import Grid from './components/Grid';
 const Home: React.FC = () => {
     return (
         <AppStyles>
-            <AppHeader />
+            <AppHeader title="Ferramentas" />
 
             <main>
                 <Grid />
