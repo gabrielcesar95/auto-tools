@@ -1,3 +1,4 @@
 {
-    "conventionalCommits.scopes": ["Structure", "Home"]
+    "conventionalCommits.scopes": ["Structure", "Home", "FuelComparer"],
+    "editor.formatOnSave": true
 }

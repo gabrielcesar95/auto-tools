@@ -6,7 +6,7 @@ const Grid: React.FC = () => {
     return (
         <GridStyles>
             <div>
-                <Link to="/fuel-comparer">
+                <Link to="/tools/fuel-comparer">
                     <article>
                         <img src="/assets/img/fuel_icon.png" alt="Comparador de rendimento de combustíveis" />
                         Comparador de rendimento de combustíveis
