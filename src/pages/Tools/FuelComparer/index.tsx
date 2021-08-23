@@ -1,18 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppHeader from '../../../components/Header';
 import AppStyles from '../../../components/styles';
 import FuelType from '../../../models/FuelType';
-import FuelForm from './components/FuelForm';
-import { InputSection } from './styles';
+import FuelInputBlock from './components/FuelInputBlock';
+import Results from './components/Results';
+import { ButtonsDiv, InputSection } from './styles';
 
 const FuelComparer: React.FC = () => {
     // TODO: pegar fueltypes do firebase
     const fuelTypes = [new FuelType('gasoline', 'Gasolina'), new FuelType('ethanol', 'Etanol')];
 
-    const handleSubmit = (e: any) => {
+    interface ExpenseEstimate {
+        fuelType: FuelType;
+        pricePerKm: number;
+    }
+    interface Results {
+        recommendedFuelType: FuelType;
+        expenseEstimates: ExpenseEstimate[];
+    }
+
+    const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
         e.preventDefault();
-        alert('Enviando form');
     };
+
+    // const compare = () => {};
 
     return (
         <AppStyles>
@@ -22,10 +33,14 @@ const FuelComparer: React.FC = () => {
                 <form onSubmit={handleSubmit}>
                     <InputSection>
                         {fuelTypes.map((fuelType) => (
-                            <FuelForm fuelType={fuelType} key={fuelType.id} />
+                            <FuelInputBlock fuelType={fuelType} key={fuelType.id} />
                         ))}
                     </InputSection>
+                    <ButtonsDiv>
+                        <button type="submit">Comparar</button>
+                    </ButtonsDiv>
                 </form>
+                <Results />
             </main>
         </AppStyles>
     );

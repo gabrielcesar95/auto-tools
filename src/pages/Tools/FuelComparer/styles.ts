@@ -6,11 +6,21 @@ export const InputSection = styled.section`
     ${tw`container mx-auto py-4 flex flex-col md:flex-row md:space-y-0 md:space-x-4`}
 `;
 
+export const ButtonsDiv = styled.div`
+    ${tw`container mx-auto flex flex-row mb-2 justify-end`}
+
+    & {
+        > button {
+            ${tw`bg-blue-600 h-8 px-2 rounded-md text-white`}
+        }
+    }
+`;
+
 export const FuelArticle = styled.article`
     ${tw`w-full md:w-1/3 lg:w-1/4 p-6 flex flex-col bg-blue-600 text-white space-y-2 rounded-md`}
 
     & {
-        h1 {
+        > h1 {
             ${tw`font-bold text-xl`}
         }
     }
@@ -30,12 +40,18 @@ export const InputDiv = styled.div`
     }
 `;
 
-export const ButtonsDiv = styled.div`
-    ${tw`flex flex-row justify-end mt-2`}
+export const ResultsSection = styled.section`
+    ${tw`container mx-auto p-6 flex flex-col bg-blue-600 text-white rounded-md`}
 
     & {
-        button {
-            ${tw`bg-gray-500 p-1 rounded-md`}
+        > h1 {
+            ${tw`text-3xl mb-3`}
+        }
+        > h2 {
+            ${tw`text-xl mb-2`}
+        }
+        > article > h1 {
+            ${tw`text-lg`}
         }
     }
 `;
