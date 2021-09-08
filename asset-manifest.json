@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/auto-tools/static/css/main.f18b63ec.chunk.css",
+    "main.js": "/auto-tools/static/js/main.bfbb552f.chunk.js",
+    "main.js.map": "/auto-tools/static/js/main.bfbb552f.chunk.js.map",
+    "runtime-main.js": "/auto-tools/static/js/runtime-main.5c9dc38e.js",
+    "runtime-main.js.map": "/auto-tools/static/js/runtime-main.5c9dc38e.js.map",
+    "static/js/2.94b3e819.chunk.js": "/auto-tools/static/js/2.94b3e819.chunk.js",
+    "static/js/2.94b3e819.chunk.js.map": "/auto-tools/static/js/2.94b3e819.chunk.js.map",
+    "static/js/3.ff3c699a.chunk.js": "/auto-tools/static/js/3.ff3c699a.chunk.js",
+    "static/js/3.ff3c699a.chunk.js.map": "/auto-tools/static/js/3.ff3c699a.chunk.js.map",
+    "index.html": "/auto-tools/index.html",
+    "static/css/main.f18b63ec.chunk.css.map": "/auto-tools/static/css/main.f18b63ec.chunk.css.map",
+    "static/js/2.94b3e819.chunk.js.LICENSE.txt": "/auto-tools/static/js/2.94b3e819.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c9dc38e.js",
+    "static/js/2.94b3e819.chunk.js",
+    "static/css/main.f18b63ec.chunk.css",
+    "static/js/main.bfbb552f.chunk.js"
+  ]
+}
